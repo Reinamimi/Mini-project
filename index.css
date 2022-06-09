@@ -1,0 +1,67 @@
+/* Resetting the browser default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+    /* font-weight: bold; */
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+li {list-style: none;}
+.heading {
+    margin: 10px 0;
+}
+
+/* Search box section */
+.search-section {
+    background-color: rgb(34, 48, 172);
+    padding: 10px;
+}
+#searchbox {
+    padding: 15px 20px; 
+    width: 100%;
+    border: none;
+}
+::placeholder {
+    font-size: medium;
+}
+
+/* User list section */
+.user-list-section {
+    margin-top: 20px;
+}
+li {
+    border: 1px solid rgb(146, 146, 146);
+    margin-top: -1px; /* Preventing double border */
+    background-color: #f6f6f6;
+    padding: 12px;
+    font-size: 18px;
+}
+li:hover {
+    background-color: #EEEEEE;
+}
+
+/* Fill box for Username */
+.username {
+    background-color:  rgb(34, 48, 172);
+    color: white;
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 4px;
+
+}
+
+/* MEDIA QUERY FOR LARGE SCREENS */
+@media (min-width: 1000px) {
+    body {
+        width: 50%;
+    }
+    li {
+        font-size: 16px;
+    }
+}
+
